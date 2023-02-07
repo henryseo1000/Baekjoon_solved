@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/seohojun/Desktop/code/Baekjoon/1차원 배열",
+      "program": "/Users/seohojun/Desktop/code/Baekjoon/1차원 배열/build/Debug/outDebug"
+    }
+  ]
+}
