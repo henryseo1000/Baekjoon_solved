@@ -18,9 +18,11 @@ int main(){
 
     for(int i = 0; i < M; i++){
         cin >> from >> to;
-        int temp = list[from - 1];
-        list[from - 1] = list[to - 1];
-        list[to - 1] = temp;
+        for(int j = from; j <= (from + to) / 2; j++){
+            int temp = list[j - 1];
+            list[j - 1] = list[from + to - j - 1];
+            list[from + to - j - 1] = temp;
+        }
     }
 
     for(int i = 0; i < N; i++){
