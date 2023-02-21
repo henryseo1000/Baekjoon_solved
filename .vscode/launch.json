@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/seohojun/Desktop/code/Baekjoon/1차원 배열",
-      "program": "/Users/seohojun/Desktop/code/Baekjoon/1차원 배열/build/Debug/outDebug"
+      "cwd": "/Users/seohojun/Desktop/백준/Baekjoon",
+      "program": "/Users/seohojun/Desktop/백준/Baekjoon/build/Debug/outDebug"
     }
   ]
 }
