@@ -6,10 +6,10 @@ int main(){
     cout.tie(NULL);
     cin.sync_with_stdio(false);
 
-    int num, in, max;
+    int num, in, k;
     int list[1001] = {};
-    max = 0;
-    cin >> num;
+
+    cin >> num >> k;
 
     for(int i = 0; i < num; i++){
         cin >> in;
@@ -20,7 +20,7 @@ int main(){
     
     for(int i = 0; i < num; i++){
         for(int j = i; j > 0; j--){
-            if (list[j] < list[j - 1]){
+            if (list[j] > list[j - 1]){
                 int temp = list[j];
                 list[j] = list[j - 1];
                 list[j - 1] = temp;
@@ -28,7 +28,5 @@ int main(){
         }
     }
 
-    for(int i = 0; i < num; i++){
-        cout << list[i] << "\n";
-    }
+    cout << list[k - 1] << "\n";
 }

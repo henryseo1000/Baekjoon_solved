@@ -7,7 +7,7 @@ int main(){
     cin.sync_with_stdio(false);
 
     int num, in, max;
-    int list[1001] = {};
+    int list[1000001] = {};
     max = 0;
     cin >> num;
 

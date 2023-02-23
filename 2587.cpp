@@ -6,19 +6,20 @@ int main(){
     cout.tie(NULL);
     cin.sync_with_stdio(false);
 
-    int num, in, max;
+    int num, in, total;
+    num = 0;
     int list[1001] = {};
-    max = 0;
-    cin >> num;
+    total = 0;
 
-    for(int i = 0; i < num; i++){
+    for(int i = 0; i < 5; i++){
         cin >> in;
         list[i] = in;
+        total += in;
     }
 
-    list[num] = '\0';
+    list[5] = '\0';
     
-    for(int i = 0; i < num; i++){
+    for(int i = 0; i < 5; i++){
         for(int j = i; j > 0; j--){
             if (list[j] < list[j - 1]){
                 int temp = list[j];
@@ -28,7 +29,6 @@ int main(){
         }
     }
 
-    for(int i = 0; i < num; i++){
-        cout << list[i] << "\n";
-    }
+    cout << total / 5 << "\n";
+    cout << list[2] << "\n";
 }
