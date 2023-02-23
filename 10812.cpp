@@ -6,29 +6,31 @@ int main(){
     cout.tie(NULL);
     cin.sync_with_stdio(false);
 
-    int num, in, max;
-    int list[1000001] = {};
-    max = 0;
-    cin >> num;
+    int size, num;
+    int from, to, mid;
+    cin >> size >> num;
 
-    for(int i = 0; i < num; i++){
-        cin >> in;
-        list[i] = in;
+    int * list = new int[size];
+
+    for(int i = 0; i < size; i++){
+        list[i] = i + 1;
     }
 
-    list[num] = '\0';
-    
     for(int i = 0; i < num; i++){
-        for(int j = i; j > 0; j--){
-            if (list[j] < list[j - 1]){
-                int temp = list[j];
-                list[j] = list[j - 1];
-                list[j - 1] = temp;
-            }
+        cin >> from >> to >> mid;
+        for(int k = mid - 1; k <= to - 1; k++){
+            int temp = 
+
         }
+
+        for(int j = from; j <= mid - 1; j++){
+
+        }
+
     }
 
-    for(int i = 0; i < num; i++){
-        cout << list[i] << "\n";
+    for(int i = 0; i < size; i++){
+        cout << list[i] << " ";
     }
+    cout << "\n";
 }
