@@ -19,8 +19,7 @@ int main(){
     for(int i = 0; i < num; i++){
         cin >> from >> to >> mid;
         for(int k = mid - 1; k <= to - 1; k++){
-            int temp = 
-
+            list[k]
         }
 
         for(int j = from; j <= mid - 1; j++){
