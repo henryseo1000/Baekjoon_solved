@@ -1,5 +1,6 @@
 # ⌨️ Baekjoon_solved - 백준 풀기
 - 백준 홈페이지 : https://www.acmicpc.net/
+- 주 사용 언어 : C/C++/Java
 
 ## 백준 프로필 정보
 [![Solved.ac 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=henryseo1000)](https://solved.ac/henryseo1000)
