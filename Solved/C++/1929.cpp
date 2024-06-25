@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 
 int main(){
@@ -6,29 +7,30 @@ int main(){
     cout.tie(NULL);
     cin.sync_with_stdio(false);
 
-    int a, b, count;
-    count = 0;
-    int prime = 0; //prime이 0이면 소수
-    while (1){
-        cin >> a;
-        if (a == 0){
-            break;
-        }
-        for(int i = a + 1; i <= a * 2; i++){
-            for(int j = 2; j <= i/2 + 1; j++){
-                if(i % j == 0){
-                    prime ++;
-                    break;
-                }
+    int a, b;
+    bool isPrime = true;
+
+    int array[1000001] = {0};
+
+    cin >> a >> b;
+
+    for(int i = a; i <= b; i++){
+        for(int j = 2; j <= i/2 + 1; j++){
+            if (array[i] == 1){
+                break;
             }
-            if (prime != 0){
-                prime = 0;
+            else if(i % j == 0){
+                array[i] = 1;
+                isPrime = false;
+                break;
             }
             else {
-                count ++;
+                continue;
             }
         }
-        cout << count << "\n";
-        count = 0;
+        if(isPrime){
+            printf("%d\n", i);
+        }
+        isPrime = true;
     }
 }
